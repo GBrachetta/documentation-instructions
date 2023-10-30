@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+1. [MKDocs](./01-mkdocs.md)
 
-## Commands
+      1. [Material](https://squidfunk.github.io/mkdocs-material/)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+      2. [Documentation](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 
-## Project layout
+2. [Docusaurus](./02-docusaurus.md)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+3. [Jekyll](./03-jekyll.md)
