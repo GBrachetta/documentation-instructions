@@ -1,0 +1,71 @@
+site_name: Guillermo Brachetta
+theme:
+  features:
+    - navigation.instant
+    - content.code.copy
+    - content.code.select
+    - search.suggest
+    - search.share
+    - header.autohide
+    - navigation.footer
+
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+plugins:
+  - blog
+  - search
+  - tags:
+      enabled: true
+      tags_slugify_separator: "-"
+
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+      name: squidfunk on Fosstodonå
+    - icon: fontawesome/brands/github
+      link: https://fosstodon.org/@squidfunk
+      name: squidfunk on Fosstodon
+    - icon: fontawesome/brands/slack
+      link: https://fosstodon.org/@squidfunk
+      name: squidfunk on Fosstodon
+  generator: false
+
+copyright: Copyright &copy; 2023 Guille
+# repo_url: https://github.com/squidfunk/mkdocs-material
