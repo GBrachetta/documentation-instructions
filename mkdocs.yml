@@ -28,7 +28,6 @@ plugins:
   - search
   - tags:
       enabled: true
-      tags_slugify_separator: "-"
 
 markdown_extensions:
   - footnotes
