@@ -13,7 +13,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ### Project layout
 
-```text title="Tree"
+```text title="Tree" linenums="0"
 mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
@@ -95,6 +95,23 @@ copyright: Copyright &copy; 2023 Guille
 # repo_url: https://github.com/squidfunk/mkdocs-material
 ```
 
+### Yaml config
+
+```json title=".vscode/settings.json" linenums="0"
+{
+    "yaml.customTags": [
+        "!ENV scalar",
+        "!ENV sequence",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+    ],
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    }
+}
+```
+
 ## Features
 
 ### Code Snippets
@@ -125,6 +142,14 @@ if (!test) {
   return null;
 }
 ```
+
+### Footnotes
+
+Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ### Admonitions
 
@@ -175,14 +200,6 @@ if (!test) {
 ### Images
 
 ![Image](https://images.unsplash.com/photo-1682686581484-a220483e6291?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
-### Footnotes
-
-Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
-
-[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ### Annotations
 
